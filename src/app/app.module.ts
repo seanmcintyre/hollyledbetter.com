@@ -3,10 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BioComponent } from './bio/bio.component';
+import { ContactComponent } from './contact/contact.component';
+import { PrivateComponent } from './private/private.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BioComponent,
+    ContactComponent,
+    PrivateComponent,
+    ScheduleComponent,
+    ResourcesComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

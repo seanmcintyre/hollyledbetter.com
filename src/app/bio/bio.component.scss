@@ -1,0 +1,43 @@
+:host {
+  //top: 0;
+  //right: 0;
+  width: 50%;
+  min-height: 100vh;
+  //position: absolute;
+  z-index: 1000;
+  padding: 80px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+
+  &:after {
+    width: 170px;
+    height: 170px;
+    border: 1px solid black;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+article {
+  //background: rgb(245, 242, 235);
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  //box-shadow: 0 0 34px rgba(black, 0.067);
+  border-radius: 10px;
+  border: 3px solid rgba(black, 0.05);
+}

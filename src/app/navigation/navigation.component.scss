@@ -1,0 +1,65 @@
+:host {
+  font: 800 0.618em/1 system-ui;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  //color: rgb(144, 91, 159);
+  color: rgba(black, 0.667);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+span {
+  display: block;
+  margin-bottom: 2.618em;
+  animation: slideIn 600ms ease-in-out both;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: 1s;
+  cursor: pointer;
+  border: 3px solid rgba(black, 0.05);
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px 5px;
+  //
+  // &:nth-child(-n+2) {
+  //   min-width: 50%;
+  // }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    transition: 1s;
+    height: 80px;
+  }
+
+  &:hover {
+    color: rgba(204, 156, 14, 1);
+    svg {
+      fill: rgba(204, 156, 14, 1) !important;
+      * {
+        fill: rgba(204, 156, 14, 1) !important;
+      }
+    }
+  }
+
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: 1000ms + ($i * 50) - (100 / $i);
+    }
+  }
+}

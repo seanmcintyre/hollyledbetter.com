@@ -1,0 +1,28 @@
+:host {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.day {
+  border: 3px solid rgba(black, 0.05);
+  border-radius: 5px;
+  padding: 50px;
+  margin: 30px;
+
+  h2 {
+    font: 200 2.618em/1 system-ui;
+  }
+
+  time {
+    font: 600 1em/1 system-ui;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .location {
+    font: 500 1.618em/1 system-ui;
+
+  }
+}

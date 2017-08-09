@@ -1,0 +1,47 @@
+.landing {
+  //max-width: 720px;
+  //margin: 0 auto 0;
+  padding: 50px;
+  position: relative;
+  z-index: 100;
+  text-align: left;
+  background: rgb(240, 235, 225);
+  width: 100%;
+  //min-height: 100vh;
+  text-align: center;
+
+  svg {
+    //fill: rgba(255, 246, 0, 1);
+    width: 60px;
+    height: 50px;
+    margin-bottom: 0.618em;
+    overflow: visible;
+    transition: 1s;
+    stroke: #000;
+    fill: none;
+    stroke-width: 70;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    //box-shadow: 0 0 20px rgba(black, 0.2);
+    z-index: -1;
+    opacity: 1;
+    background: black;
+    opacity: 0.2;
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    display: none;
+  }
+
+  h1 {
+    font: 700 1.618em/1 system-ui;
+    margin-bottom: 0.618em;
+    //color: rgb(144, 91, 159);
+    color: rgba(black, 0.667);
+  }
+}

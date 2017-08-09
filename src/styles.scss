@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+$white: white;
+$black: black;
+
+@import 'reset';
+
+html {
+  background: rgb(235, 231, 224);
+}
