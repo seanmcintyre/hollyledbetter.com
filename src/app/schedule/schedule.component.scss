@@ -1,28 +1,41 @@
 :host {
-  max-width: 720px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
   display: block;
+  display: flex;
 }
 
 .day {
-  border: 3px solid rgba(black, 0.05);
   border-radius: 5px;
   padding: 50px;
   margin: 30px;
+  background: rgb(245, 240, 238);
+  box-shadow: 0 10px 20px -9px rgba(black, 0.25);
+  transition: 120ms ease-in-out;
+  cursor: pointer;
+  width: calc(50% - 60px);
+
+  &:hover {
+    transform: scale(1.01667) rotate(0.167deg);
+  }
 
   h2 {
-    font: 200 2.618em/1 system-ui;
+    font: 700 2em/1 system-ui;
   }
 
   time {
-    font: 600 1em/1 system-ui;
+    font: 800 0.618em/1 system-ui;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.01em;
+    opacity: 0.667;
+    margin: 15px 0 30px;
+    display: block;
   }
 
   .location {
-    font: 500 1.618em/1 system-ui;
-
+    font: 700 1.309em/1 system-ui;
+    letter-spacing: -0.01em;
+    margin: 40px 0 15px;
   }
 }

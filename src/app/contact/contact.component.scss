@@ -8,3 +8,15 @@
 p {
   padding: 50px;
 }
+
+span {
+  background: rgb(245, 240, 238);
+  box-shadow: 0 10px 20px -9px rgba(black, 0.25);
+  transition: 120ms ease-in-out;
+  cursor: pointer;
+  padding: 30px;
+  margin: 20px 20px 0;
+  float: left;
+  border-radius: 5px;
+  width: 100%;
+}

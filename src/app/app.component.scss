@@ -39,9 +39,11 @@
   }
 
   h1 {
-    font: 700 1.618em/1 system-ui;
+    font: 700 1.618em/1.334 system-ui;
     margin-bottom: 0.618em;
     //color: rgb(144, 91, 159);
     color: rgba(black, 0.667);
+    max-width: 800px;
+    margin: 0.618em auto;
   }
 }

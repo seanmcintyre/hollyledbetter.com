@@ -9,6 +9,7 @@ import { PrivateComponent } from './private/private.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     PrivateComponent,
     ScheduleComponent,
     ResourcesComponent,
-    NavigationComponent
+    NavigationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

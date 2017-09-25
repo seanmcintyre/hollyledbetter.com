@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 720px;
+  max-width: calc(50vmin + 300px);
   margin: 0 auto;
 }
 
@@ -25,30 +25,32 @@
 span {
   display: block;
   margin-bottom: 2.618em;
-  animation: slideIn 600ms ease-in-out both;
+  animation: slideIn 600ms ease-in-out backwards;
   text-align: center;
   flex-grow: 1;
   flex-basis: 0;
   transition: 1s;
   cursor: pointer;
-  border: 3px solid rgba(black, 0.05);
+  //border: 1px solid rgba(black, 0.05);
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px 5px;
-  //
-  // &:nth-child(-n+2) {
-  //   min-width: 50%;
-  // }
+
+  background: rgb(245, 240, 238);
+  box-shadow: 0 10px 20px -9px rgba(black, 0.25);
+  transition: 120ms ease-in-out;
+  cursor: pointer;
 
   svg {
     display: block;
     margin: 0 auto;
-    transition: 1s;
-    height: 80px;
+    //transition: 1s;
+    height: 10vmin;
   }
 
   &:hover {
     color: rgba(204, 156, 14, 1);
+    transform: scale(1.0334) rotate(0.33deg);
     svg {
       fill: rgba(204, 156, 14, 1) !important;
       * {
