@@ -32,14 +32,22 @@ span {
   transition: 1s;
   cursor: pointer;
   //border: 1px solid rgba(black, 0.05);
-  margin: 20px;
+  margin: 10px 0;
   border-radius: 5px;
   padding: 20px 5px;
+  min-width: 100%;
 
-  background: rgb(245, 240, 238);
-  box-shadow: 0 10px 20px -9px rgba(black, 0.25);
+  background: rgb(250, 244, 242);
+  box-shadow:
+    0 10px 20px -9px rgba(black, 0.25),
+    0 -6px 18px -12px rgba(black, 0.15);
   transition: 120ms ease-in-out;
   cursor: pointer;
+
+  @media screen and (min-width: 800px) {
+    min-width: 0px;
+    margin: 20px;
+  }
 
   svg {
     display: block;

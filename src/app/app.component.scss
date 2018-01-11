@@ -5,7 +5,7 @@
   position: relative;
   z-index: 100;
   text-align: left;
-  background: rgb(240, 235, 225);
+  background: rgb(244, 239, 233);
   width: 100%;
   //min-height: 100vh;
   text-align: center;
@@ -22,20 +22,8 @@
     stroke-width: 70;
   }
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 2px;
-    //box-shadow: 0 0 20px rgba(black, 0.2);
-    z-index: -1;
-    opacity: 1;
-    background: black;
-    opacity: 0.2;
-    width: 560px;
-    height: 560px;
-    border-radius: 50%;
-    display: none;
+.logo{
+    width: 100px;
   }
 
   h1 {
@@ -45,5 +33,22 @@
     color: rgba(black, 0.667);
     max-width: 800px;
     margin: 0.618em auto;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  
+  > div {
+    max-width: 900px;
+    margin: 20px auto 50px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  a {
+    min-width: 50%;
+    display: block;
+    padding: 10px 5px;
   }
 }

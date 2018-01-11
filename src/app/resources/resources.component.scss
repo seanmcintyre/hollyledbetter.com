@@ -6,26 +6,36 @@
   display: block;
 }
 
-p {
+.books {
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
 }
 
-span {
+.book {
   padding: 30px;
   font-weight: 700;
-  margin: 20px;
+  margin: 30px;
   border-radius: 5px;
-  max-width: 240px;
-  height: 360px;
+  max-width: 220px;
+  height: 330px;
   background: rgb(245, 240, 238);
-  box-shadow: 0 10px 20px -9px rgba(black, 0.25);
+  box-shadow: 0 15px 30px -12px rgba(black, 0.33);
   transition: 120ms ease-in-out;
   cursor: pointer;
+  position: relative;
 
   &:hover {
     transform: scale(1.0334) rotate(0.67deg);
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
   }
 }

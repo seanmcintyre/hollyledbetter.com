@@ -6,7 +6,11 @@
 }
 
 p {
-  padding: 50px;
+  padding: 50px 50px 0;
+
+  + p {
+    padding: 30px 50px 20px;
+  }
 }
 
 h2 {
@@ -14,14 +18,35 @@ h2 {
   font: 700 1.618em/1 system-ui;
 }
 
-span {
-  background: rgb(245, 240, 238);
-  box-shadow: 0 10px 20px -9px rgba(black, 0.25);
-  transition: 120ms ease-in-out;
-  cursor: pointer;
-  padding: 30px;
-  margin: 20px 20px 0;
-  float: left;
+// span {
+//   background: rgb(245, 240, 238);
+//   box-shadow: 0 10px 20px -9px rgba(black, 0.25);
+//   transition: 120ms ease-in-out;
+//   cursor: pointer;
+//   padding: 30px;
+//   margin: 20px 20px 0;
+//   float: left;
+//   border-radius: 5px;
+//   width: 40%;
+// }
+
+.link {
+  //background: red;
+  padding: 10px 50px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
-  width: 40%;
+  margin: 20px;
+  max-width: 400px;
+
+   a {
+    display: inline-block;
+   }
+}
+
+svg {
+  width: 40px;
+  display: inline-block;
 }

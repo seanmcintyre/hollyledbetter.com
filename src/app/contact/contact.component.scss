@@ -9,7 +9,12 @@ p {
   padding: 50px;
 }
 
-span {
+.methods {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.method {
   background: rgb(245, 240, 238);
   box-shadow: 0 10px 20px -9px rgba(black, 0.25);
   transition: 120ms ease-in-out;
@@ -19,4 +24,20 @@ span {
   float: left;
   border-radius: 5px;
   width: 100%;
+  text-align: center;
+  width: calc(50% - 40px);
+  min-height: 275px;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  span {
+    display: block;
+  }
 }
