@@ -1,0 +1,24 @@
+:host {
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+  display: block;
+}
+
+span {
+  display: block;
+  font-weight: 300;
+  font-size: 25px;
+  border-bottom: 1px solid rgba(#000, 0.1);
+  padding: 10px 0;
+  letter-spacing: -0.167px;
+  color: rgba(#000, 0.667);
+}
+
+.speaker {
+  border: 0;
+  font-weight: 800;
+  text-align: right;
+  letter-spacing: 0.167px;
+  color: rgba(#000, 1);
+}

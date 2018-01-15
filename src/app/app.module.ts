@@ -10,6 +10,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     ScheduleComponent,
     ResourcesComponent,
     NavigationComponent,
-    HomeComponent
+    HomeComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,

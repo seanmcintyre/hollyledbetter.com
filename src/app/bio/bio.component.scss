@@ -6,16 +6,16 @@
   //position: absolute;
   z-index: 1000;
   padding: 80px;
-  display: flex;
-  //background: red;
+  //display: flex;
   max-width: 1000px;
   margin: 0 auto;
+  display: block;
 }
 
 .circle {
-  max-width: 300px;
+  max-width: 250px;
   //height: 150px;
-  margin: 0 auto 30px;
+  margin: -50px 50px 10px -50px;
   overflow: hidden;
   //border-radius: 50%;
   position: relative;
@@ -23,6 +23,7 @@
   //box-shadow: 0 10px 20px -9px rgba(black, 0.25);
   transition: 120ms ease-in-out;
   cursor: pointer;
+  float: left;
 
   // &:after {
   //   width: 170px;
@@ -37,8 +38,8 @@
 
   img {
     width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px -9px rgba(black, 0.25);
+    border-radius: 5px 0 5px 0;
+    //box-shadow: 0 10px 20px -9px rgba(black, 0.25);
     border: 0;
     outline: 0;
   }
@@ -47,7 +48,7 @@
 article {
   //background: rgb(245, 242, 235);
   padding: 50px;
-  max-width: 500px;
+  //max-width: 500px;
   margin: 0 auto 50px;
   //box-shadow: 0 0 34px rgba(black, 0.067);
   border-radius: 5px;
@@ -56,6 +57,7 @@ article {
   box-shadow: 0 10px 20px -9px rgba(black, 0.25);
   transition: 120ms ease-in-out;
   cursor: pointer;
+  border: 1px solid rgba(#000, 0.25);
 }
 
 p {

@@ -38,17 +38,22 @@
 
 footer {
   margin-top: 50px;
-  
+
   > div {
-    max-width: 900px;
-    margin: 20px auto 50px;
+    max-width: 600px;
+    margin: 50px auto;
     display: flex;
     position: relative;
     flex-wrap: wrap;
   }
+
   a {
     min-width: 50%;
     display: block;
     padding: 10px 5px;
+  }
+
+  a:visited {
+    color: #000;
   }
 }
