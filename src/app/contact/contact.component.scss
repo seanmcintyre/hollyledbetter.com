@@ -3,19 +3,25 @@
   width: 100%;
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
 
 p {
   padding: 50px;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
 .methods {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .method {
-  background: rgb(245, 240, 238);
+  background: rgb(250, 244, 242);
   box-shadow: 0 10px 20px -9px rgba(black, 0.25);
   transition: 120ms ease-in-out;
   cursor: pointer;
@@ -26,15 +32,28 @@ p {
   width: 100%;
   text-align: center;
   width: calc(50% - 40px);
+  min-width: 300px;
   min-height: 275px;
+
+  &:hover {
+    transform: scale(1.0334) rotate(0.33deg);
+  }
 
   .icon {
     width: 50px;
-    height: 50px;
-    background: black;
-    border-radius: 50%;
+    //height: 50px;
+    //background: black;
+    //border-radius: 50%;
     display: block;
     margin: 0 auto;
+  }
+
+  .time {
+    font: 800 0.618em/1 system-ui;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(black, 0.334);
+    margin: 20px 0 10px;
   }
 
   span {

@@ -10,17 +10,21 @@
   max-width: 1000px;
   margin: 0 auto;
   display: block;
+  position: relative;
 }
 
 .circle {
   max-width: 250px;
-  //height: 150px;
-  margin: -50px 50px 10px -50px;
+  height: 150px;
+  width: 150px;
   overflow: hidden;
-  //border-radius: 50%;
-  position: relative;
-  //background: rgb(245, 240, 238);
-  //box-shadow: 0 10px 20px -9px rgba(black, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(245, 240, 238);
+  box-shadow: 0 10px 20px -9px rgba(black, 0.334);
   transition: 120ms ease-in-out;
   cursor: pointer;
   float: left;
@@ -37,7 +41,7 @@
   // }
 
   img {
-    width: 100%;
+    width: 105%;
     border-radius: 5px 0 5px 0;
     //box-shadow: 0 10px 20px -9px rgba(black, 0.25);
     border: 0;
@@ -47,7 +51,7 @@
 
 article {
   //background: rgb(245, 242, 235);
-  padding: 50px;
+  padding: 100px 50px 50px;
   //max-width: 500px;
   margin: 0 auto 50px;
   //box-shadow: 0 0 34px rgba(black, 0.067);
@@ -56,8 +60,8 @@ article {
   background: rgb(245, 240, 238);
   box-shadow: 0 10px 20px -9px rgba(black, 0.25);
   transition: 120ms ease-in-out;
-  cursor: pointer;
-  border: 1px solid rgba(#000, 0.25);
+  //cursor: pointer;
+  border-top: 1px solid rgba(#000, 0.067);
 }
 
 p {

@@ -23,7 +23,18 @@
   }
 
 .logo{
-    width: 100px;
+    width: 140px;
+    padding: 20px;
+    border-radius: 50%;
+    transition: 210ms;
+    border: 1px solid rgba(#FFF, 0);
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(#FFF, 0.2);
+      border: 1px solid rgba(#FFF, 0.667);
+      transform: scale(1.0334) rotate(3deg) translateY(-2px);
+    }
   }
 
   h1 {
@@ -41,16 +52,26 @@ footer {
 
   > div {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 80px auto 50px;
     display: flex;
     position: relative;
     flex-wrap: wrap;
+    cursor: pointer;
   }
 
   a {
     min-width: 50%;
     display: block;
     padding: 10px 5px;
+    font: 600 1em/1em system-ui;
+    margin-bottom: 0.618em;
+    border-bottom: 3px inset rgba(#000, 0);
+    cursor: pointer;
+    transition: 80ms;
+
+    &:hover {
+      border-bottom: 3px inset rgba(#000, 0.334);
+    }
   }
 
   a:visited {
