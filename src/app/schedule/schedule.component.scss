@@ -16,7 +16,7 @@
   padding: 30px 50px;
   margin: 30px 0;
   min-width: 100%;
-  background: white;
+  background: rgb(253, 248, 246);
   box-shadow:
     0 10px 20px -9px rgba(black, 0.25),
     0 -8px 19px -13px rgba(black, 0.4);
@@ -60,6 +60,7 @@
   h2 {
     font: 700 2em/1 system-ui;
     //color: white;
+    margin-bottom: 16px;
   }
 
   time,
@@ -67,18 +68,25 @@
   .level {
     font: 800 0.618em/1 system-ui;
     text-transform: uppercase;
-    letter-spacing: 0.005em;
-    opacity: 0.75;
-    margin: 10px 0;
+    letter-spacing: 0.05em;
+    opacity: 0.25;
+    margin: 10px 1.5px;
     display: block;
     //color: white;
+  }
+
+  a {
+    color: rgb(236, 197, 63);
+    font: 800 0.618em/1 system-ui;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   .location {
     font: 700 1.309em/1 system-ui;
     letter-spacing: -0.01em;
     margin: 20px 0 15px;
-    border-top: 1px solid rgba(#000, 0.25);
+    border-top: 1px solid rgba(#000, 0.1);
     padding-top: 20px;
   }
 }

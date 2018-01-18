@@ -33,13 +33,20 @@ h2 {
 .link {
   //background: red;
   padding: 10px 50px;
-  border: 1px solid black;
+  border: 1px solid rgba(#000, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   margin: 20px auto;
   max-width: 400px;
+  background: rgba(#FFF, 0.67);
+  cursor: pointer;
+  transition: 170ms;
+
+    &:hover {
+      transform: scale(1.0334) rotate(0.67deg);
+    }
 
    a {
     display: inline-block;
