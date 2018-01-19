@@ -39,21 +39,31 @@ h2 {
   justify-content: center;
   border-radius: 5px;
   margin: 20px auto;
-  max-width: 400px;
+  max-width: 320px;
   background: rgba(#FFF, 0.67);
   cursor: pointer;
   transition: 170ms;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 640px) {
+    max-width: 400px;
+  }
 
     &:hover {
       transform: scale(1.0334) rotate(0.67deg);
     }
 
-   a {
-    display: inline-block;
-   }
-}
+    svg {
+      width: 40px;
+      display: block;
+      transform: translateY(3px);
+    }
 
-svg {
-  width: 40px;
-  display: inline-block;
+   span {
+    display: block;
+    padding: 0 3px;
+    transform: translateY(-1.5px);
+   }
 }
