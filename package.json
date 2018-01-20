@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && angular-cli-ghpages --branch gh-pages"
+    "deploy": "ng build --prod; echo 'holly.yoga' > dist/CNAME; ngh"
   },
   "private": true,
   "dependencies": {
@@ -27,15 +27,15 @@
     "zone.js": "^0.8.20"
   },
   "devDependencies": {
-    "@angular/cli": "^1.6.4",
+    "@angular/cli": "^1.6.5",
     "@angular/compiler-cli": "^5.2.1",
     "@angular/language-service": "^5.2.1",
     "@types/jasmine": "~2.8.4",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~9.3.0",
     "angular-cli-ghpages": "^0.5.2",
-    "codelyzer": "~4.0.2",
-    "jasmine-core": "~2.9.0",
+    "codelyzer": "~4.1.0",
+    "jasmine-core": "~2.9.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
     "karma-chrome-launcher": "~2.2.0",
