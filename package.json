@@ -9,11 +9,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod; echo 'holly.yoga' > dist/CNAME; ngh"
+    "deploy": "ng build --prod --aot --e=prod; echo 'holly.yoga' > dist/CNAME; ngh"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.1",
+    "@angular/cli": "^1.6.5",
     "@angular/common": "^5.2.1",
     "@angular/compiler": "^5.2.1",
     "@angular/core": "^5.2.1",
@@ -27,9 +28,9 @@
     "zone.js": "^0.8.20"
   },
   "devDependencies": {
-    "@angular/cli": "^1.6.5",
     "@angular/compiler-cli": "^5.2.1",
     "@angular/language-service": "^5.2.1",
+    "@angularclass/hmr": "^2.1.3",
     "@types/jasmine": "~2.8.4",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~9.3.0",

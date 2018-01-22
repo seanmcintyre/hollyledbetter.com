@@ -1,14 +1,43 @@
+// 2^(8/8)      ->  2
+// 2^(7/8)      ->  1.834
+// 2^(6/8)      ->  1.68179
+// 2^(5/8)      ->  1.54221
+// 2^(4/8)      ->  1.41421
+// 2^(3/8)      ->  1.29684
+// 2^(2/8)      ->  1.18920
+// 2^(1/8)      ->  1.0905
+// 2^(-1/8)     ->  0.917
+// 2^(-2/8)     ->  0.8409
+// 2^(-3/8)     ->  0.7711
+// 2^(-4/8)     ->  0.7071
+// 2^(-5/8)     ->  0.64841
+// 2^(-6/8)     ->  0.5946
+// 2^(-7/8)     ->  0.54525
+// 2^(-8/8)     ->  0.5
+
 :host {
-  font: 800 0.618em/1 system-ui;
+  font: 800 0.5em/1 system-ui;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   //color: rgb(144, 91, 159);
-  color: rgba(black, 0.667);
+  color: rgba(black, 0.8);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: calc(50vmin + 300px);
+  max-width: calc(50vmin + 320px);
   margin: 0 auto;
+
+  @media screen and (min-width: 800px) {
+    min-width: 760px;
+    border-bottom: 1px solid red;
+  }
+
+  @media screen and (min-width: 1100px) {
+    color: rgba(black, 0.667);
+    font: 800 0.618em/1 system-ui;
+    min-width: 720px;
+    border-bottom: 1px solid red;
+  }
 }
 
 @keyframes slideIn {
@@ -45,6 +74,11 @@ span {
   cursor: pointer;
 
   @media screen and (min-width: 800px) {
+    min-width: 0px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1100px) {
     min-width: 0px;
     margin: 20px;
   }
