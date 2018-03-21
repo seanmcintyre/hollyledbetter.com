@@ -9,7 +9,10 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "browserconfig.xml",
+        "CNAME",
+        "favicon.png",
+        "manifest.json"
       ],
       "index": "index.html",
       "main": "main.ts",

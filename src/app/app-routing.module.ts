@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { BioComponent } from './bio/bio.component';
-import { PrivateComponent } from './private/private.component';
-import { ContactComponent } from './contact/contact.component';
-import { ScheduleComponent } from './schedule/schedule.component';
-import { ResourcesComponent } from './resources/resources.component';
+import { HomeComponent } from './pages/home/home.component';
+import { BioComponent } from './pages/bio/bio.component';
+import { PrivateComponent } from './pages/private/private.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ScheduleComponent } from './pages/schedule/schedule.component';
+import { ResourcesComponent } from './pages/resources/resources.component';
 
 const routes: Routes = [
   {
@@ -38,12 +38,7 @@ const routes: Routes = [
     path: 'resources',
     component: ResourcesComponent,
     children: []
-  },
-  // {
-  //   path: 'class/:id',
-  //   component: Class,
-  //   children: []
-  // }
+  }
 ];
 
 @NgModule({

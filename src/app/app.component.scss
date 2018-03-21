@@ -57,24 +57,43 @@ footer {
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
-  }
 
-  a {
-    min-width: 50%;
-    display: block;
-    padding: 10px 5px;
-    font: 600 1em/1em system-ui;
-    margin-bottom: 0.618em;
-    border-bottom: 3px inset rgba(#000, 0);
-    cursor: pointer;
-    transition: 80ms;
+    a {
+      min-width: 50%;
+      display: block;
+      padding: 10px 5px;
+      font: 600 1em/1em system-ui;
+      margin-bottom: 0.618em;
+      border-bottom: 3px inset rgba(#000, 0);
+      cursor: pointer;
+      transition: 80ms;
 
-    &:hover {
-      border-bottom: 3px inset rgba(#000, 0.334);
+      &:hover {
+        border-bottom: 3px inset rgba(#000, 0.334);
+      }
     }
+
   }
 
   a:visited {
     color: #000;
+  }
+
+}
+
+.instagram {
+  display: flex;
+  width: 100%;
+  background: white;
+
+  > a {
+    display: inline-block;
+    margin: 0;
+    min-width: 20%;
+    width: 20%;
+
+    img {
+      max-width: 100%;
+    }
   }
 }
