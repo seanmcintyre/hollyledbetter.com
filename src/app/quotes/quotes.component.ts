@@ -30,7 +30,6 @@ export class QuotesComponent implements OnInit {
 
   ngOnInit() {
     this.quote = this.getQuote();
-    console.log(this.quote);
   }
 
 }

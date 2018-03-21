@@ -1,8 +1,4 @@
 $white: white;
 $black: black;
 
-@import 'reset';
-
-html {
-  background: rgb(244, 239, 233);
-}
+@import './scss/reset';

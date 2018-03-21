@@ -1,3 +1,5 @@
+@import '~scss/typography';
+
 :host {
   max-width: 720px;
   width: 100%;
@@ -6,11 +8,20 @@
 }
 
 p {
-  padding: 50px 50px 0;
+  padding: 0 50px 0;
+  line-height: 1.5;
 
   + p {
     padding: 30px 50px 20px;
   }
+}
+
+.testimonial {
+  @include testimonial;
+  text-align: center;
+  max-width: 700px;
+  margin: 30px auto;
+  margin-bottom: 60px;
 }
 
 h2 {
@@ -19,7 +30,12 @@ h2 {
 }
 
 img {
-  max-width: 600px;
+  width: 100%;
+  border-radius: 3px;
+  max-width: 100%;
+  margin-bottom: -60px;
+  z-index: 50;
+  position: relative;
 }
 
 // span {
@@ -44,12 +60,14 @@ img {
   border-radius: 5px;
   margin: 20px auto;
   max-width: 320px;
-  background: rgba(#FFF, 0.67);
+  background: rgba(#FFF, 1);
   cursor: pointer;
   transition: 170ms;
   font-weight: 700;
   display: flex;
   align-items: center;
+  z-index: 100;
+    position: relative;
 
   @media screen and (min-width: 640px) {
     max-width: 400px;

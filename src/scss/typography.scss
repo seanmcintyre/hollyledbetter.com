@@ -1,0 +1,45 @@
+@mixin testimonial {
+  position: relative;
+
+  h2 {
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.3334;
+    letter-spacing: 0.01em;
+    position: relative;
+
+    &:before,
+    &:after {
+      position: absolute;
+      font-family: 'Garamond';
+      font-size: 5em;
+      opacity: 0.25;
+    }
+
+    &:before {
+      content: "\201C";
+      top: -60px;
+      left: -20px;
+    }
+
+    &:after {
+      content: "\201D";
+      bottom: -115px;
+      right: 0;
+    }
+  }
+
+  .source {
+    margin-top: 10px;
+    text-align: right;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 0.75em;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: rgba(#000, 0.67);
+    text-transform: uppercase;
+    border-top: 1px solid rgba(#000, 0.334);
+    padding: 10px;
+  }
+}
