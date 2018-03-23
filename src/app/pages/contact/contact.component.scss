@@ -60,11 +60,15 @@ h2 {
 .bottle {
   color: rgb(212, 57, 22);
   &.method .wait {
-    font: 700 0.5em/1 system-ui;
+    font: 400 0.809em/1 system-ui;
     text-transform: uppercase;
     letter-spacing: 0;
     margin: 0;
-    padding: 5px 0;
+    padding: 10px 0;
+
+    .num {
+      font: 800 2.618em/1 system-ui;
+    }
   }
 }
 

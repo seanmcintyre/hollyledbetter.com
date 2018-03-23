@@ -1,0 +1,91 @@
+:host {
+  font: 800 0.5em/1 system-ui;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  //color: rgb(144, 91, 159);
+  color: rgba(black, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: calc(50vmin + 320px);
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: red;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+
+  @media screen and (min-width: 640px) {
+    display: none;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+span {
+  display: block;
+  margin-bottom: 2.618em;
+  animation: slideIn 600ms ease-in-out backwards;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: 1s;
+  cursor: pointer;
+  //border: 1px solid rgba(black, 0.05);
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 20px 5px;
+  min-width: 100%;
+
+  background: rgb(250, 244, 242);
+  box-shadow:
+    0 10px 20px -9px rgba(black, 0.25),
+    0 -6px 18px -12px rgba(black, 0.15);
+  transition: 120ms ease-in-out;
+  cursor: pointer;
+
+  @media screen and (min-width: 800px) {
+    min-width: 0px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    min-width: 0px;
+    margin: 20px;
+  }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    //transition: 1s;
+    height: 10vmin;
+  }
+
+  &:hover {
+    color: rgba(204, 156, 14, 1);
+    transform: scale(1.0334) rotate(0.33deg);
+    svg {
+      fill: rgba(204, 156, 14, 1) !important;
+      * {
+        fill: rgba(204, 156, 14, 1) !important;
+      }
+    }
+  }
+
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: 1000ms + ($i * 50) - (100 / $i);
+    }
+  }
+}

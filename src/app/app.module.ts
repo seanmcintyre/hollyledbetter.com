@@ -14,6 +14,7 @@ import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 
 import { QuotesComponent } from './quotes/quotes.component';
+import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { QuotesComponent } from './quotes/quotes.component';
     ResourcesComponent,
     NavigationComponent,
     HomeComponent,
-    QuotesComponent
+    QuotesComponent,
+    MobileNavComponent
   ],
   imports: [
     BrowserModule,

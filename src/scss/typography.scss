@@ -1,12 +1,19 @@
 @mixin testimonial {
   position: relative;
+  padding: 0 20px;
 
   h2 {
     font-weight: 600;
-    font-size: 1.4em;
-    line-height: 1.3334;
+    font-size: 1.1em;
+    line-height: 1.25;
     letter-spacing: 0.01em;
     position: relative;
+
+    @media screen and (min-width: 640px) {
+      font-weight: 600;
+      font-size: 1.4em;
+      line-height: 1.3334;
+    }
 
     &:before,
     &:after {
@@ -18,14 +25,24 @@
 
     &:before {
       content: "\201C";
-      top: -60px;
-      left: -20px;
+      top: -40px;
+      left: -10px;
+
+      @media screen and (min-width: 640px) {
+        top: -60px;
+        left: -20px;
+      }
     }
 
     &:after {
       content: "\201D";
-      bottom: -115px;
-      right: 0;
+      bottom: -100px;
+      right: 5px;
+
+      @media screen and (min-width: 640px) {
+        bottom: -115px;
+        right: 0;
+      }
     }
   }
 

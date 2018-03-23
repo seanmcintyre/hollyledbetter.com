@@ -8,8 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private r: ActivatedRoute) {
-    console.log(r.snapshot);
+  constructor() {
   }
 
   ngOnInit() {
