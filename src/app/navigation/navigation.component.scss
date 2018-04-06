@@ -59,10 +59,10 @@ span {
   transition: 1s;
   cursor: pointer;
   //border: 1px solid rgba(black, 0.05);
-  margin: 10px 0;
+  margin: 10px;
   border-radius: 5px;
-  padding: 20px 5px;
-  min-width: 100%;
+  padding: 10px 5px;
+  min-width: calc(50% - 20px);
 
   background: rgb(250, 244, 242);
   box-shadow:
@@ -74,6 +74,8 @@ span {
   @media screen and (min-width: 800px) {
     min-width: 0px;
     margin: 15px;
+    padding: 20px 5px;
+    min-width: 100%;
   }
 
   @media screen and (min-width: 1100px) {

@@ -1,7 +1,7 @@
 .landing {
   //max-width: 720px;
   //margin: 0 auto 0;
-  padding: 50px;
+  padding: 10px 50px 30px;
   position: relative;
   z-index: 100;
   text-align: left;
@@ -9,6 +9,10 @@
   width: 100%;
   //min-height: 100vh;
   text-align: center;
+
+  @media screen and (min-width: 800px) {
+    padding: 50px;
+  }
 
   svg {
     //fill: rgba(255, 246, 0, 1);
