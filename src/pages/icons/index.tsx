@@ -1,0 +1,9 @@
+export { Bottle } from './Bottle.svg';
+export { Contact } from './Contact.svg';
+export { Email } from './Email.svg';
+export { Holly } from './Holly.svg';
+export { Phone } from './Phone.svg';
+export { Pigeon } from './Pigeon.svg';
+export { Private } from './Private.svg';
+export { Resources } from './Resources.svg';
+export { Schedule } from './Schedule.svg';
