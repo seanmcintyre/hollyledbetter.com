@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{"74v/":function(n,w,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/_app",function(){return o("cha2")}])}},[["74v/",1,0]]]);
